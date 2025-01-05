@@ -5,5 +5,6 @@ const productSchema = mongoose.Schema({
   desc: { type: String, required: true },
   price: { type: Number, required: true },
   url: { type: String },
+  rating: {type: Number},
 });
 export default mongoose.model("Product", productSchema);
